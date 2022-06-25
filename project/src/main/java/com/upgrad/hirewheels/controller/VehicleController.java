@@ -2,7 +2,6 @@ package com.upgrad.hirewheels.controller;
 
 import com.upgrad.hirewheels.dto.VehicleDTO;
 import com.upgrad.hirewheels.entities.Vehicle;
-import com.upgrad.hirewheels.services.AdminService;
 import com.upgrad.hirewheels.services.VehicleService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/hirewheels/v1")
 public class VehicleController {
-
-    @Autowired
-    private AdminService adminService;
 
     @Autowired
     private VehicleService vehicleService;
